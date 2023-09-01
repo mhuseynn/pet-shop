@@ -39,12 +39,81 @@ namespace Pet_shop
         }
 
 
+        public void search_by_nickname(string nickname)
+        {
+            for (int i = 0; i < cats.Length; i++)
+            {
+                if (cats[i]._nickname == nickname)
+                {
+                    cats[i].show();
+                }
+            }
+
+            for (int i = 0; i < dogs.Length; i++)
+            {
+                if (dogs[i]._nickname == nickname)
+                {
+
+                    dogs[i].show();
+                }
+            }
+
+            for (int i = 0; i < birds.Length; i++)
+            {
+                if (birds[i]._nickname == nickname)
+                {
+
+                    birds[i].show();
+                }
+            }
+
+            for (int i = 0; i < fishes.Length; i++)
+            {
+                if (fishes[i]._nickname == nickname)
+                {
+
+                    fishes[i].show();
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public void display()
         {
             for (int i = 0; i < cats.Length; i++)
             {
                 cats[i].show();
             }
+            Console.WriteLine("--------------------------");
+            for (int i = 0; i < dogs.Length; i++)
+            {
+                dogs[i].show();
+            }
+            Console.WriteLine("--------------------------");
+            for (int i = 0; i < birds.Length; i++)
+            {
+                birds[i].show();
+            }
+            Console.WriteLine("--------------------------");
+            for (int i = 0; i < fishes.Length; i++)
+            {
+                fishes[i].show();
+            }
+            
         }
     }
 }

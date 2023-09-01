@@ -11,18 +11,20 @@ namespace Animal_base
         public string _nickname { get; set; }
         public int _age { get; set; }
         public string _gender { get; set; }
+
         public int _energy { get; set; }
+
         public int _price { get; set; }
         public int _mealquantity { get; set; }
 
         public int _money { get; set; }
 
-        public Animal(string nickname, int age, string gender, int energy,int price,int mealquantity,int money)
+        public Animal(string nickname, int age, string gender, int price, int mealquantity, int money)
         {
             _nickname = nickname;
             _age = age;
             _gender = gender;
-            _energy = energy;
+            _energy = 100;
             _price = price;
             _mealquantity = mealquantity;
             _money = money;
@@ -33,8 +35,13 @@ namespace Animal_base
         public virtual void show()
         {
             Console.WriteLine($"Nickname - {_nickname}");
+            Console.WriteLine($"Age - {_age}");
+            Console.WriteLine($"Gender - {_gender}");
+            Console.WriteLine($"Energy - {_energy}");
+            Console.WriteLine($"Price - {_price}");
+            Console.WriteLine($"Meal Quantity - {_mealquantity}");
         }
     }
 
-   
+
 }
